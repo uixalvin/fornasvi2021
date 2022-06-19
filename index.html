@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FORNAS VI 2021 - Sumatera Selatan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style/main.css" />
+  </head>
+  <body>
+    <navbar class="nav-custom">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center py-3"
+      >
+        <div class="nav-toggler" onclick="navToggler()">
+          <img src="./assets/img/icon/menu.svg" alt="" />
+          <span class="gap-1"></span>
+          MENU
+        </div>
+        <div class="nav-brand">
+          <img
+            src="./assets/img/logo/fornas-logo.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="nav-search">
+          <button class="btn-icon" onclick="searchToggle()">
+            <img src="./assets/img/icon/search.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="nav-contents nav-closed">
+        <div class="top-bar mt-4">
+          <h3 class="h3-custom text-white">Menu</h3>
+          <button class="btn-icon text-white" onclick="navToggler()">
+            <img src="./assets/img/icon/x.svg" alt="" />
+          </button>
+        </div>
+        <div class="nav-links mt-5">
+          <div class="nav-link">
+            <a href="" class="link-lg">Beranda</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Peraihan</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Berita</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Cabang Olahraga</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Galeri</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Kontak</a>
+          </div>
+          <div class="nav-link mt-4">
+            <a href="" class="link-lg">Informasi Tambahan</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-search-input search-closed">
+        <button class="btn-icon v-red" onclick="searchToggle()">
+          <img src="./assets/img/icon/x.svg" alt="" />
+        </button>
+        <form class="form-search" action="">
+          <div>
+            <img src="./assets/img/icon/search-2.svg" alt="" />
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Cari berita, pertandingan, cabor"
+              autofocus
+            />
+          </div>
+        </form>
+      </div>
+    </navbar>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-11">
+                <div class="counter-time">
+                  <div class="branding">
+                    <img
+                      src="./assets/img/logo/Logo Sumsel Bugar.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="timer" id="timer-countdown">
+                    <div class="time">
+                      <h3 class="h3-custom m-0 days">64</h3>
+                      <p class="p-sm">Hari</p>
+                    </div>
+                    <div class="time">
+                      <h3 class="h3-custom m-0 hours">64</h3>
+                      <p class="p-sm">Jam</p>
+                    </div>
+                    <div class="time">
+                      <h3 class="h3-custom m-0 minutes">64</h3>
+                      <p class="p-sm">Menit</p>
+                    </div>
+                    <div class="time">
+                      <h3 class="h3-custom m-0 seconds">64</h3>
+                      <p class="p-sm">Detik</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h1 class="h1-custom mt-lg-5 mt-4 text-white">
+              Be Ready for FORNAS VI 2021
+            </h1>
+            <p class="p-md text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              dictum sapien elementum scelerisque ultricies
+            </p>
+            <button class="btn-primary-custom mt-3">
+              Eksplor Sekarang
+              <img src="./assets/img/icon/chevron-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
