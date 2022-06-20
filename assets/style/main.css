@@ -4,7 +4,9 @@
     font-family: 'DM Sans';
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden !important;
+}
 /* Navbar */
 .nav-search-input{
     position: fixed;
@@ -24,7 +26,7 @@ form.form-search div{
     align-items: center;
     justify-content: space-between;
 }
-.nav-search-input button.btn-icon{
+.nav-search-input button.top-r-floating{
     position: absolute;
     top: 24px;
     right: 24px;
@@ -95,10 +97,20 @@ input.search-input{
 .v-red{
     background-color: #ED3340 !important;
 }
-
+.w-70{
+    width: 70%;
+}
+.mt-gap{
+    margin-top: 144px;
+}
 /* Texts */
 h1.h1-custom{
     font-size: 72px;
+    color: #3F3F3F;
+    font-weight: bold;
+}
+h1.h1-custom-md{
+    font-size: 54px;
     color: #3F3F3F;
     font-weight: bold;
 }
@@ -107,9 +119,17 @@ h3.h3-custom{
     color: #3F3F3F;
     font-weight: bold;
 }
+h4.h4-custom{
+    font-size: 24px;
+    color: #3F3F3F;
+    font-weight: bold;
+}
 a.link-lg{
     font-size: 34px;
     color: #FFF;
+}
+a.link-dark{
+    text-decoration: underline #3F3F3F;
 }
 p.p-sm{
     font-size: 14px;
@@ -120,7 +140,15 @@ p.p-sm{
 p.p-md{
     font-size: 18px;
     color: #7c7c7c;
-    width: 76%;
+    
+}
+p.p-lg{
+    font-size: 24px;
+    color: #7c7c7c;
+
+}
+.text-justify{
+    text-align: justify;
 }
 
 /* Buttons */
@@ -173,6 +201,16 @@ section.hero-section{
     margin-left: 34px;
 }
 
+/* Brand Section */
+.brand-logo{
+    width: 70%;
+}
+
+/* News Section */
+.card-news .thumbnail-box img{
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 992px){
     a.link-lg{
         font-size: 24px;
@@ -193,6 +231,7 @@ section.hero-section{
     }
     h1.h1-custom{
         font-size: 52px;
+        
     }
     
     h3.h3-custom{
@@ -204,5 +243,6 @@ section.hero-section{
     form.form-search div{
         width: 80vw;
     }
+  
 
 }
